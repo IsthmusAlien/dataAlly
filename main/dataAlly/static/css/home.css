@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css');
+
+
 * {
     box-sizing: border-box;
+    color: white;
 }
 
 body,
@@ -14,6 +19,10 @@ html {
     width: 30%;
 }
 
+section{
+    height: 100vh;
+}
+
 html{
     -ms-overflow-style: none;  
     scrollbar-width: none; 
@@ -24,6 +33,35 @@ html::-webkit-scrollbar {
     display: none;  
 }
 
+.f_btn{
+    color: black;
+    background-color: lightgreen;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: all;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    position: relative;
+    top: -50px;
+}
+
+.databases_info h2{
+    font-size: 1.8rem;
+    padding-left: 4%;
+    font-family: "Poppins", sans-serif;
+}
+
+.dataImage{
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-top: 3%;
+    box-shadow: 20px 20px 2px 3px white;
+}
+
+.dataImage:hover{
+    padding: -20px;
+}
 
 .text_con{
     color: white;
@@ -40,16 +78,19 @@ html::-webkit-scrollbar {
 #element{
     position: absolute;
     padding-top: 300px;
-    top: -500px;
+    top: -400px;
     padding-top: 300px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
     overflow-y: scroll;
 }
 
 body::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+    display: none;
 }
