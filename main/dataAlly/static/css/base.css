@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@font-face {
+    font-family: 'logo_font';
+    src: url('../css/ttf/monoglyceride.demibold.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.logo_area{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_area img{
+    width: 7vh;
+    height: 7vh;
+}
+
+.logo_area a{
+    font-size: 1.9rem;
+    font-weight: 700;
+    font-family: 'logo_font';
+}
+
+.link_area{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links ~ .links{
+    margin-left: 10%;
+}
+
+.search_area{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_area input{
+    width: 70%;
+    height: 30%;
+    padding: 3%;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none; 
+}
+
+.button_area{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    width: 35%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 0;
+    color: gray
+}
+
+.buttons ~ .buttons{
+    margin-left: 3%;
+}
+
+button:active{
+    background-color: rgb(230, 230, 230) !important;
+}
+
+button:hover{
+    background-color: rgb(230, 230, 230) !important;
+}
+
+.buttons_text{
+    margin: 0%;
+    padding: 0%;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    height: 25%;
+    background-color: #1b1e22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    color: white;
+    margin-left: 60%;
+}
+
+.footer_logo{
+    width: 25vh;
+    height: 25vh;
+    margin-right: 60%;
+}
