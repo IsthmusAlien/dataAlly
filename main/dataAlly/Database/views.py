@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def Database(request):
+    return render(request, 'database.html')
