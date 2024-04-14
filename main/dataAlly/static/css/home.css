@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css');
-
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css');
 
 * {
     box-sizing: border-box;
@@ -73,6 +73,7 @@ html::-webkit-scrollbar {
     z-index: 1;
     position: relative;
     top: 0;
+    margin-bottom: 20%;
 }
 
 #element{
@@ -94,3 +95,12 @@ body{
 body::-webkit-scrollbar { 
     display: none;
 }
+
+.top_datasets{
+    width: 90%;
+    height: 50vh;
+    border: 1px solid white;
+    margin-left: 4%;
+    margin-bottom: 10%;
+}
+
