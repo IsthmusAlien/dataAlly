@@ -44,10 +44,10 @@
 
 <script>
     let typed = new Typed('#element', {
-    strings: ["Empowering Tomorrow's Insights Today: Where Data 📊 Meets Machine Learning", "Data-driven Discoveries, Powered by AI 🤖.", "Machine Learning: Shaping the Future, One Model at a Time."],
-    typeSpeed: 50,
-    showCursor: false,
-    loop: true
+        strings: ["Empowering Tomorrow's Insights Today: Where Data 📊 Meets Machine Learning", "Data-driven Discoveries, Powered by AI 🤖.", "Machine Learning: Shaping the Future, One Model at a Time."],
+        typeSpeed: 50,
+        showCursor: false,
+        loop: true
     });
 </script>
 
@@ -55,7 +55,7 @@
     const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
 canvas.width  = window.innerWidth;
-canvas.height = 400;
+canvas.height = 300;
 let particleArray = [];
 
 let mouse = {
@@ -66,7 +66,7 @@ let mouse = {
 window.addEventListener('mousemove', 
 	function(event){
 		mouse.x = event.x + canvas.clientLeft/2;
-		mouse.y = event.y + canvas.clientTop/2;
+		mouse.y = event.y-50 + canvas.clientTop/2;
 });
 
 function drawImage(){
