@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css');
 @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
 
 * {
     box-sizing: border-box;
-    color: white;
 }
 
 body,
@@ -33,6 +34,50 @@ html::-webkit-scrollbar {
     display: none;  
 }
 
+.arrow_con{
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    bottom: 40px;
+    color: white;
+}
+
+.arr1{
+    position: relative;
+    animation: bounce2 1s infinite alternate;
+}
+
+.arr2{
+    position: relative;
+    bottom: 65px;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        top: -65px;
+    }
+    100% {
+        top: -40px;
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+.arr_a{
+    text-decoration: none;
+}
+
 .f_btn{
     color: black;
     background-color: lightgreen;
@@ -46,10 +91,46 @@ html::-webkit-scrollbar {
     top: -50px;
 }
 
+.count_con{
+    width: 90%;
+    color: black;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    margin-left: 4%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.count_img{
+    width: 60%;
+    margin-left: 22%;    
+}
+
+.datasets_count{
+    width: 30%;
+}
+
+.count{
+    width: 30%;
+    margin-left: 20%;
+}
+
+.count_con h3{
+    margin: 0px;
+    text-align: center;
+}
+
+.count_con h2{
+    margin: 0px;
+    text-align: center;
+}
+
 .databases_info h2{
     font-size: 1.8rem;
     padding-left: 4%;
     font-family: "Poppins", sans-serif;
+    color: white;
 }
 
 .dataImage{
@@ -73,7 +154,7 @@ html::-webkit-scrollbar {
     z-index: 1;
     position: relative;
     top: 0;
-    margin-bottom: 20%;
+    margin-bottom: 0;
 }
 
 #element{
@@ -98,9 +179,71 @@ body::-webkit-scrollbar {
 
 .top_datasets{
     width: 90%;
-    height: 50vh;
+    height:fit-content;
     border: 1px solid white;
     margin-left: 4%;
     margin-bottom: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-left: 2.5%;
+    padding-bottom: 20px;
+}
+
+.card_img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h3{
+    margin-left: 3%;
+    margin-bottom: 0;
+}
+
+.card p{
+    font-size: 0.8rem;
+    padding: 3%;
+    width: 100%;
+    margin-top: 0;
+}
+
+.card a{
+    text-decoration: none;
+    background-color: rgba(0,0,0);
+    color: white;
+    margin-left: 3%;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.card a:hover{
+    color: lightgreen;
+    background-color: rgb(36, 36, 36);
+}
+
+
+.card h4{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: black;
+    width: fit-content;
+    margin-left: 3%;
+    margin-top: 0;
+}

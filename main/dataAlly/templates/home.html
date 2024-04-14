@@ -3,7 +3,7 @@
 {% block title %}Home{% endblock title %}
 
 {% block body %}
-/<main>
+<main>
     <div class="main_con">
         <div class="particle_con">
             <canvas id="canvas1"></canvas>
@@ -13,15 +13,61 @@
         <span id="element"></span>
         <a class="f_btn" href="#">Let's Explore</a>
     </div>
+    <a class="arr_a" href="#datasets_con">
+        <div class="arrow_con">
+            <i class="fi fi-rr-angle-down arr1"></i>
+            <i class="fi fi-rr-angle-down arr2"></i>
+        </div>
+    </a>
 
-    <div class="databases_con">
+    <div class="count_con">
+        <div class="datasets_count">
+            <img class="count_img" src="{% static 'images/dataset.gif' %}" alt="img1">
+            <h2>230K</h2>
+            <h2>Total DataSets</h2>
+        </div>
+
+        <div class="models_count count">
+            <img class="count_img" src="{% static 'images/model.gif' %}" alt="img2">
+            <h2>230K</h2>
+            <h2>Total Models</h2>
+        </div>
+
+        <div class="dataliens_count count">
+            <img class="count_img" src="{% static 'images/people.gif' %}" alt="img3">
+            <h2>230K</h2>
+            <h2>Total dataliens</h2>
+        </div>
+    </div>
+
+    <div id="datasets_con" class="databases_con">
         <div class="databases_info">
             <h2><i class="fi fi-rs-file-spreadsheet"></i> Top DataSets</h2>
         </div>
 
-        <div class="top_datasets">
-
-        </div>
+        <di class="top_datasets">
+            <div class="card">
+                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
+                <h3>DataSet1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
+                <h4>Rating: ⭐️</h4>
+                <a href="#">visit</a>
+            </div>
+            <div class="card">
+                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
+                <h3>DataSet1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
+                <h4>Rating: ⭐️</h4>
+                <a href="#">visit</a>
+            </div>
+            <div class="card">
+                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
+                <h3>DataSet1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
+                <h4>Rating: ⭐️</h4>
+                <a href="#">visit</a>
+            </div>
+        </di>
     </div>
 
     <div class="databases_con">
@@ -30,7 +76,27 @@
         </div>
 
         <div class="top_datasets">
-
+            <div class="card">
+                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
+                <h3>DataSet1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
+                <h4>Rating: ⭐️</h4>
+                <a href="#">visit</a>
+            </div>
+            <div class="card">
+                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
+                <h3>DataSet1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
+                <h4>Rating: ⭐️</h4>
+                <a href="#">visit</a>
+            </div>
+            <div class="card">
+                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
+                <h3>DataSet1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
+                <h4>Rating: ⭐️</h4>
+                <a href="#">visit</a>
+            </div>
         </div>
     </div>
 
