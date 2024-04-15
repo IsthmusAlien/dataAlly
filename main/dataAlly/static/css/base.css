@@ -20,7 +20,7 @@ nav{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -44,6 +44,7 @@ a{
     font-size: 1.9rem;
     font-weight: 700;
     font-family: 'logo_font';
+    color: white;
 }
 
 .link_area{
