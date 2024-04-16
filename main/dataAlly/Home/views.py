@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from Database.models import Database
 
 def Home(request):
-    return render(request, 'home.html')
+    databases = Database.objects.all()
+    return render(request, 'home.html', {'databases': databases})

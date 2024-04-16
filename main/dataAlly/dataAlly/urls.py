@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from Home.views import Home
@@ -15,4 +17,4 @@ urlpatterns = [
     path('login/', Login),
     path('signup/', Signup),
     path('polls/', Polls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
