@@ -1,0 +1,184 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block title %}Home{% endblock title %}
+    
+<style>
+    
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #1b1e22;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: var(--body-font-size, 14px);
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    letter-spacing: -0.5px;
+    font-weight: var(--base-text-weight-light, 300);
+    margin-bottom: 1.2rem;
+  }
+
+  .form {
+    text-align: center;
+    margin-top: 2.6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  label {
+    display: block;
+    font-weight: var(--base-text-weight-normal, 600);
+    margin-bottom: 9px;
+    margin-left: 6px;
+    text-align: left;
+    cursor: default;
+  }
+
+  #forgot-password {
+    float: right;
+    font-size: 12px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: blue
+  }
+
+  #forgot-password:hover {
+    text-decoration: none;
+  }
+
+  .inputs {
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    padding: 5px 12px;
+  }
+
+  .pos {
+    position: relative !important;
+  }
+
+  .elem {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    background-color: white;
+    color: black;
+    padding: 0.85rem 0 1.5rem 0;
+    border-radius: 15px;
+    background-color: rgba(211, 211, 211, 0.925);
+  }
+
+  .flexer {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .right-0 {
+    right: 10 !important;
+  }
+
+  .top-0 {
+    top: 0 !important;
+  }
+
+  .absolute {
+    position: absolute !important;
+  }
+
+  .crtacct {
+    padding: 0;
+    text-decoration: none;
+  }
+
+  #submit {
+    margin-top: 0.8rem;
+    background-color: #fcca30;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .divider {
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid #979faf;
+    line-height: 0.1em;
+    margin: -20px 0 20px;
+    margin-left: 10%;
+    margin-top: 1rem;
+    padding: 0 10px;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  #submit:hover {
+    background-color: black;
+    color: #fcca30;
+    cursor: auto;
+  }
+
+  .linksign {
+    width: 50%;
+    display: inline-block;
+    padding: 5px 30px;
+  }
+
+  .gimg {
+    width: 130%;
+    text-align: center;
+  }
+
+</style>
+
+{% block body %}
+<main>
+    <div class="form flexer">
+    <form action="#" method="post">
+        <div class="image">
+        <img
+            src="data:image/png;base64,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"
+        />
+        </div>
+        <h1>Sign up to dataAlly</h1>
+        <div class="elem">
+        <label for="username">Username</label>
+        <input type="text" id="username" class="inputs" name="username" autofocus="autofocus" autocapitalize="off" autocomplete="username" autocorrect="off" required/>
+        <br />
+        <label for="email">Email</label>
+        <input type="email" id="email" class="inputs" name="email" required />
+        <br />
+        <div class="pos">
+            <label for="pwd" class="pwd">Password</label>
+            <input type="password" id="pwd" class="inputs" name="pwd" required />
+
+            <label for="pwd" class="pwd">Confirm Password</label>
+            <input type="password" id="pwd" class="inputs" name="pwd" required />
+            
+            <input type="submit" id="submit" class="inputs" name="submit" value="Sign up" onclick="validateForm()"/>
+        </div>
+        <p>Already have an Account? <a class="crtacct" href="">&nbsp;Sign In </a></p>
+        <div class="divider">
+            <span>or</span>
+        </div>
+        <div class="linksign">
+            <a href="" id="glogin" class="gbtn">
+            <div class="gimg"><img class="gimg" src="/Google.png" alt="Sign in image"></div>
+            </a>
+        </div>
+        </div>
+    </form>
+    </div>
+</main>
+<script>
+    // JS Code
+</script>
+{% endblock body %}
