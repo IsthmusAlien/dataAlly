@@ -1,122 +1,6 @@
 {% extends "base.html" %} 
 {% load static %} 
-{% block title %}Home{% endblock title %}
-
-<style>
-    
-  *{
-    box-sizing: border-box;
-  }
-
-  body {
-    background-color: #1b1e22;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-size: var(--body-font-size, 14px);
-    line-height: 1.5;
-  }
-
-  h1 {
-    font-size: 24px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    letter-spacing: -0.5px;
-    font-weight: var(--base-text-weight-light, 300);
-    margin-bottom: 1.2rem;
-  }
-
-  .form {
-    text-align: center;
-    margin-top: 2.6rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  label {
-    display: block;
-    font-weight: var(--base-text-weight-normal, 600);
-    margin-bottom: 9px;
-    margin-left: 6px;
-    text-align: left;
-    cursor: default;
-  }
-
-  #forgot-password {
-    float: right;
-    font-size: 12px;
-    margin-bottom: 6px;
-    text-decoration: none;
-    color: blue
-  }
-
-  #forgot-password:hover {
-    text-decoration: none;
-  }
-
-  .inputs {
-    width: 80%;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
-    padding: 5px 12px;
-  }
-
-  .pos {
-    position: relative !important;
-  }
-
-  .elem {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    background-color: white;
-    color: black;
-    padding: 0.85rem 0 1.5rem 0;
-    border-radius: 15px;
-    background-color: rgba(211, 211, 211, 0.925);
-  }
-
-  .flexer {
-    min-width: 100%;
-    max-width: 100%;
-  }
-
-  .right-0 {
-    right: 10 !important;
-  }
-
-  .top-0 {
-    top: 0 !important;
-  }
-
-  .absolute {
-    position: absolute !important;
-  }
-
-  .crtacct {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-  }
-
-  #submit {
-    margin-top: 0.8rem;
-    background-color: #fcca30;
-    color: black;
-    font-weight: 600;
-    margin-bottom: 5px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
-
-  #submit:hover {
-    background-color: black;
-    color: #fcca30;
-    cursor: auto;
-  }
-
-</style>
+{% block title %}Login{% endblock title %}
 
 {% block body %}
 <main>
@@ -137,7 +21,7 @@
         <br />
         <div class="pos">
             <label for="pwd" class="pwd">Password</label>
-            <a href="" id="forgot-password" class="top-0 right-0 absolute">Forgot Password?</a>
+            <a href="" id="forgot-password1" class="absolute">Forgot Password?</a>
             <input type="password" id="pwd" class="inputs" name="pwd" required />
 
             <input type="submit" id="submit" class="inputs" name="submit" value="Sign in" onclick="validateForm()"/>
