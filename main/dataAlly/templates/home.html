@@ -51,6 +51,7 @@
                 <img class="card_img" src="/media/{{ db.db_image }}" alt="dimg">
                 <h3>{{ db.db_name }}</h3>
                 <p>{{ db.db_info }}</p>
+                <p>Date: {{ db.db_upload_date }}</p>
                 <h4>Rating: {{ db.db_rating }} ⭐️</h4>
                 <a href="#">visit</a>
             </div>
@@ -65,41 +66,16 @@
         </div>
 
         <div class="top_datasets">
+            {% for md in models %}
             <div class="card">
-                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
-                <h3>DataSet1</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
-                <h4>Rating: ⭐️</h4>
+                <img class="card_img" src="/media/{{ md.md_image }}" alt="dimg">
+                <h3>{{ md.md_name }}</h3>
+                <p>{{ md.md_info }}</p>
+                <p>Date: {{ md.md_upload_date }}</p>
+                <h4>Rating: {{ md.md_rating }} ⭐️</h4>
                 <a href="#">visit</a>
             </div>
-            <div class="card">
-                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
-                <h3>DataSet1</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
-                <h4>Rating: ⭐️</h4>
-                <a href="#">visit</a>
-            </div>
-            <div class="card">
-                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
-                <h3>DataSet1</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
-                <h4>Rating: ⭐️</h4>
-                <a href="#">visit</a>
-            </div>
-            <div class="card">
-                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
-                <h3>DataSet1</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
-                <h4>Rating: ⭐️</h4>
-                <a href="#">visit</a>
-            </div>
-            <div class="card">
-                <img class="card_img" src="https://i.pinimg.com/474x/f9/df/98/f9df98f937630aa415ee71fceb00a4a1.jpg" alt="dimg">
-                <h3>DataSet1</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate.</p>
-                <h4>Rating: ⭐️</h4>
-                <a href="#">visit</a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
