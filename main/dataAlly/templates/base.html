@@ -9,18 +9,19 @@
     <link rel="stylesheet" href={% static "css/home.css" %}>
     <link rel="stylesheet" href={% static "css/login.css" %}>
     <link rel="stylesheet" href={% static "css/signup.css" %}>
+    <link rel="stylesheet" href={% static "css/polls.css" %}>
     <link rel="icon" sizes="600x600" href={% static 'img/logo_tab.png' %} type="image/png"> 
 </head>
 <body>
     <nav>
         <span class="logo_area">
-            <img src={% static 'img/logo_main.png' %} alt="logo">
+            <a href="/" style="height: 48px;"><img src={% static 'img/logo_main.png' %} alt="logo"></a>
             <a href="/" style="position: relative; right: 13px;">dataAlly</a>
         </span>
         <span class="link_area">
             <a class="links" href="">Databases</a>
             <a class="links" href="">Models</a>
-            <a class="links" href="">Polls</a>
+            <a class="links" href="/polls/">Polls</a>
         </span>
         <span class="search_area">
             <input placeholder="Search" type="text">
@@ -33,14 +34,14 @@
     {% block body %}
         
     {% endblock body %}
-    <footer>
+    <!-- <footer>
         <span>
             <img class="footer_logo" src={% static 'img/logo_main.png' %} alt="logo">
         </span>
         <span>
             <a href="">About</a>
         </span>
-    </footer>
+    </footer> -->
 </body>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
