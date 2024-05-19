@@ -1,7 +1,6 @@
 {% extends "base.html" %} 
 {% load static %} 
 {% block title %}Signup{% endblock title %}
-    
 
 {% block body %}
 <main>
@@ -29,15 +28,7 @@
             
             <input type="submit" id="submit" class="inputs" name="submit" value="Sign up" onclick="validateForm()"/>
         </div>
-        <p>Already have an Account? <a class="crtacct" href="">&nbsp;Sign In </a></p>
-        <div class="divider">
-            <span>or</span>
-        </div>
-        <div class="linksign">
-            <a href="" id="glogin" class="gbtn">
-            <div class="gimg"><img class="gimg" src="/Google.png" alt="Sign in image"></div>
-            </a>
-        </div>
+        <p>Already have an Account? <a class="crtacct" href="/login">Login</a></p>
         </div>
     </form>
     </div>

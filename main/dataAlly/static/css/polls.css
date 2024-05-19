@@ -1,0 +1,138 @@
+.main_polls {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.selection_part {
+    width: 20%;
+    height: 100%;
+}
+
+.interaction_part {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1%;
+}
+
+.divider_polls  {
+    width: 1px;
+    height: 95%;
+    background: #8E8E8E;
+}
+
+.poll_item {
+    width: 350px;
+    height: 375px;
+    background-color: rgba(211, 211, 211, 0.925);
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+} 
+
+.poll_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer_poll_item_span{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.poll_title h3 {
+    margin: 0%;
+}
+
+.poll_subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poll_subtitle h4 {
+    margin: 0%;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.checkbox span {
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.checkbox span label {
+    margin: 0%;
+}
+
+.radiobutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.radiobutton span {
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.radiobutton span label {
+    margin: 0%;
+}
+
+.textarea {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.textarea textarea {
+    height: 80px;
+    width: 95%;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.dropbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.slider-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 3%;
+}
+
+.slider-label {
+    font-size: 14px; 
+    color: #000;
+}

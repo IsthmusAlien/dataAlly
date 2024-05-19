@@ -1,0 +1,252 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block title %}Polls{% endblock title %}
+    
+{% block body %}
+<main class="main_polls">
+   <div class="selection_part">
+
+   </div>
+   <div class="divider_polls"></div>
+   <div class="interaction_part"> 
+        <div class="poll_item">
+            <span class="poll_title outer_poll_item_span">
+                <h3>Title</h3>
+            </span>
+            <span class="poll_subtitle outer_poll_item_span">
+                <h4>Subtitle</h4>
+            </span>
+            <span class="checkbox outer_poll_item_span">
+                <span>
+                    <label for="option_1">Option 1</label>
+                    <input type="checkbox" id="option_1">  
+                </span>
+                <span>
+                    <label for="option_2">Option 2</label>
+                    <input type="checkbox" id="option_2">
+                </span>
+                <span>
+                    <label for="option_3">Option 3</label>
+                    <input type="checkbox" id="option_3">
+                </span>
+                <span>
+                    <label for="option_4">Option 4</label>
+                    <input type="checkbox" id="option_4">
+                </span>
+            </span>
+            <span class="radiobutton outer_poll_item_span">
+                <span>
+                    <label for="radio1">Option 1</label>
+                    <input type="radio" id="radio1" name="radiogroup">
+                </span>
+                <span>
+                    <label for="radio2">Option 2</label>
+                    <input type="radio" id="radio2" name="radiogroup">
+                </span>
+                <span>
+                    <label for="radio3">Option 3</label>
+                    <input type="radio" id="radio3" name="radiogroup">
+                </span>
+            </span>
+            <span class="textarea outer_poll_item_span">
+                <textarea id="textarea"></textarea>
+            </span>
+            <span class="dropbox outer_poll_item_span">
+                <label for="dropbox">Select a option :&nbsp;</label>
+                <select id="dropbox">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </span>
+            <span class="slider-container">
+                <div class="slider-labels">
+                    <span class="slider-label">0</span>
+                    <span class="slider-label">50</span>
+                    <span class="slider-label">100</span>
+                </div>
+                <input type="range" id="slider" min="0" max="100" style="width: 90%;">
+            </span>
+        </div>
+        <div class="poll_item">
+            <span class="poll_title outer_poll_item_span">
+                <h3>Title</h3>
+            </span>
+            <span class="poll_subtitle outer_poll_item_span">
+                <h4>Subtitle</h4>
+            </span>
+            <span class="checkbox outer_poll_item_span">
+                <span>
+                    <label for="option_1">Option 1</label>
+                    <input type="checkbox" id="option_1">  
+                </span>
+                <span>
+                    <label for="option_2">Option 2</label>
+                    <input type="checkbox" id="option_2">
+                </span>
+                <span>
+                    <label for="option_3">Option 3</label>
+                    <input type="checkbox" id="option_3">
+                </span>
+                <span>
+                    <label for="option_4">Option 4</label>
+                    <input type="checkbox" id="option_4">
+                </span>
+            </span>
+            <span class="radiobutton outer_poll_item_span">
+                <span>
+                    <label for="radio1">Option 1</label>
+                    <input type="radio" id="radio1" name="radiogroup">
+                </span>
+                <span>
+                    <label for="radio2">Option 2</label>
+                    <input type="radio" id="radio2" name="radiogroup">
+                </span>
+                <span>
+                    <label for="radio3">Option 3</label>
+                    <input type="radio" id="radio3" name="radiogroup">
+                </span>
+            </span>
+            <span class="textarea outer_poll_item_span">
+                <textarea id="textarea"></textarea>
+            </span>
+            <span class="dropbox outer_poll_item_span">
+                <label for="dropbox">Select a option :&nbsp;</label>
+                <select id="dropbox">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </span>
+            <span class="slider-container">
+                <div class="slider-labels">
+                    <span class="slider-label">0</span>
+                    <span class="slider-label">50</span>
+                    <span class="slider-label">100</span>
+                </div>
+                <input type="range" id="slider" min="0" max="100" style="width: 90%;">
+            </span>
+        </div>
+        <div class="poll_item">
+            <span class="poll_title outer_poll_item_span">
+                <h3>Title</h3>
+            </span>
+            <span class="poll_subtitle outer_poll_item_span">
+                <h4>Subtitle</h4>
+            </span>
+            <span class="checkbox outer_poll_item_span">
+                <span>
+                    <label for="option_1">Option 1</label>
+                    <input type="checkbox" id="option_1">  
+                </span>
+                <span>
+                    <label for="option_2">Option 2</label>
+                    <input type="checkbox" id="option_2">
+                </span>
+                <span>
+                    <label for="option_3">Option 3</label>
+                    <input type="checkbox" id="option_3">
+                </span>
+                <span>
+                    <label for="option_4">Option 4</label>
+                    <input type="checkbox" id="option_4">
+                </span>
+            </span>
+            <span class="radiobutton outer_poll_item_span">
+                <span>
+                    <label for="radio1">Option 1</label>
+                    <input type="radio" id="radio1" name="radiogroup">
+                </span>
+                <span>
+                    <label for="radio2">Option 2</label>
+                    <input type="radio" id="radio2" name="radiogroup">
+                </span>
+                <span>
+                    <label for="radio3">Option 3</label>
+                    <input type="radio" id="radio3" name="radiogroup">
+                </span>
+            </span>
+            <span class="textarea outer_poll_item_span">
+                <textarea id="textarea"></textarea>
+            </span>
+            <span class="dropbox outer_poll_item_span">
+                <label for="dropbox">Select a option :&nbsp;</label>
+                <select id="dropbox">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </span>
+            <span class="slider-container">
+                <div class="slider-labels">
+                    <span class="slider-label">0</span>
+                    <span class="slider-label">50</span>
+                    <span class="slider-label">100</span>
+                </div>
+                <input type="range" id="slider" min="0" max="100" style="width: 90%;">
+            </span>
+        </div>
+        <div class="poll_item">
+            <span class="poll_title outer_poll_item_span">
+                <h3>Title</h3>
+            </span>
+            <span class="poll_subtitle outer_poll_item_span">
+                <h4>Subtitle</h4>
+            </span>
+            <span class="checkbox outer_poll_item_span">
+                <span>
+                    <label for="option_1">Option 1</label>
+                    <input type="checkbox" id="option_1">  
+                </span>
+                <span>
+                    <label for="option_2">Option 2</label>
+                    <input type="checkbox" id="option_2">
+                </span>
+                <span>
+                    <label for="option_3">Option 3</label>
+                    <input type="checkbox" id="option_3">
+                </span>
+                <span>
+                    <label for="option_4">Option 4</label>
+                    <input type="checkbox" id="option_4">
+                </span>
+            </span>
+            <span class="radiobutton outer_poll_item_span">
+                <span>
+                    <label for="radio1">Option 1</label>
+                    <input type="radio" id="radio1" name="radiogroup">
+                </span>
+                <span>
+                    <label for="radio2">Option 2</label>
+                    <input type="radio" id="radio2" name="radiogroup">
+                </span>
+                <span>
+                    <label for="radio3">Option 3</label>
+                    <input type="radio" id="radio3" name="radiogroup">
+                </span>
+            </span>
+            <span class="textarea outer_poll_item_span">
+                <textarea id="textarea"></textarea>
+            </span>
+            <span class="dropbox outer_poll_item_span">
+                <label for="dropbox">Select a option :&nbsp;</label>
+                <select id="dropbox">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </span>
+            <span class="slider-container">
+                <div class="slider-labels">
+                    <span class="slider-label">0</span>
+                    <span class="slider-label">50</span>
+                    <span class="slider-label">100</span>
+                </div>
+                <input type="range" id="slider" min="0" max="100" style="width: 90%;">
+            </span>
+        </div>
+   </div>
+</main>
+
+
+{% endblock body %}
