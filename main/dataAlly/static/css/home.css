@@ -336,3 +336,35 @@ body::-webkit-scrollbar {
     width: fit-content;
     margin-top: 0;
 }
+
+@media (max-width: 850px) {
+    .card{
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    .count_con{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .count_con h2{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .card{
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .databases_info h2{
+        font-size: 1.5rem;
+    }
+
+    .count{
+        margin-left: 10%;
+    }
+}
