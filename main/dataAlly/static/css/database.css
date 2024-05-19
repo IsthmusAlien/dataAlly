@@ -59,7 +59,7 @@
 }
 
 #file_type {
-    margin-left: 3%;
+    margin-left: 10%;
     width: 30%;
     padding: 2%;
     height: 25px;
@@ -67,7 +67,17 @@
 }
 
 .file_type_con {
+    width: 100%;
     display: flex;
+    background-color: black;
+    color: white;
+    padding: 4%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.file_type_con label{
+    margin-left: 10%;
 }
 
 .price-slider-container {
@@ -133,4 +143,41 @@
     font-weight: 400;
     margin-left: 10px;
     padding-top: 10px;
+}
+
+#min_file_size{
+    width: 30%;
+    height: 2%;
+}
+
+#max_file_size{
+    width: 30%;
+    height: 2%;
+}
+
+#file_size_type{
+    width: 35%;
+    height: 21px;
+    margin-left: 2%;
+}
+
+.file-size{
+    background-color: white;
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 9px;
+    border-radius: 10px;
+}
+
+.file-size label{
+    margin-right: 3%;
+}
+
+.file-size h3{
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.file_size_all{
+    display: flex;
 }

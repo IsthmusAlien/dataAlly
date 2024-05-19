@@ -14,6 +14,21 @@
         <div class="filters">
             <h2>Filters</h2>
 
+            <div class="file-size">
+                <h3>File Size</h3>
+
+                <div class="file_size_all">
+                <input type="number" placeholder="Min" name="file-size" id="min_file_size">
+                <label for="max_file_size">To</label>
+                <input type="number" placeholder="Min" name="file-size" id="max_file_size">
+                <select name="file_size_type" id="file_size_type">
+                    <option value="kb">KB</option>
+                    <option value="mb">MB</option>
+                    <option value="gb">GB</option>
+                </select>
+                </div>
+            </div>
+
             <div class="file_type_con">
                 <label for="file_type">File Type</label><select name="file_type" id="file_type">
                     <option value="csv">.csv</option>
@@ -35,6 +50,8 @@
                     <span>Price To: $<span id="max-price-val">2000</span></span>
                 </div>
             </div>
+
+
 
         </div>
     </div>
