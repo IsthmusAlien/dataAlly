@@ -3,7 +3,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from Home.views import Home
-from Database.views import Database
+from Database.views import Dataset
 from Models.views import Models
 from Login.views import Login
 from Signup.views import Signup
@@ -12,7 +12,7 @@ from Polls.views import Polls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Home),
-    path('database/', Database),
+    path('database/', Dataset),
     path('models/', Models),
     path('login/', Login),
     path('signup/', Signup),
