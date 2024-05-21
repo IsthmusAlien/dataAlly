@@ -65,7 +65,7 @@
             </div>
             <div class="cards_con">
                 {% for dataset in type.list %}
-                <div class="Card">
+                <div onclick=show() class="Card">
                     <img src="{{ dataset.db_image.url }}" alt="Dataset Image">
                     <div class="info">
                         <h3>{{ dataset.db_name }}</h3>
@@ -84,8 +84,22 @@
             <p>no dataset</p>
         {% endif %}
     </div>
-    </div>
 </main>
+
+<div class="detailed_info_con">
+    <div class="detailed_card">
+        <div class="img_imp_details_con">
+            <img src="https://brightdata.com/wp-content/uploads/2023/01/What-Is-a-Dataset_regular.png" alt="dataset img">
+            <div class="main_info">
+                <h2>Title<span onclick=gayab() class="back"><i class="fi fi-rr-cross"></i></span></h2>
+                <h4>Price</h4>
+                <p>Info: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem natus fugit inventore obcaecati ad aliquid ab voluptatum autem iusto vel?</p>
+                <span>Rating</span>
+                <span>Date</span>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock body %}
 {% block extra_scripts %}
