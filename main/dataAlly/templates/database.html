@@ -42,26 +42,64 @@
                 <h3 class="price_tag">Price</h3>
                 <div class="slider">
                     <div class="track"></div>
-                    <input type="range" min="0" max="1000" class="slider-range" id="min-price">
-                    <input type="range" min="1000" max="2000" class="slider-range" id="max-price">
+                    <input type="range" min="0" max="1000" value="0" class="slider-range" id="min-price">
+                    <input type="range" min="1000" max="2000" value="2000" class="slider-range" id="max-price">
                 </div>
                 <div class="price-values">
                     <span>Price From: $<span id="min-price-val">0</span></span>
                     <span>Price To: $<span id="max-price-val">2000</span></span>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 
     
 
     <div class="main_data_container">
-        
+        {% if datasets %}
+        {% regroup datasets by db_type as dataset_list %}
+        {% for type in dataset_list %}
+        <div class="grid_datasets_con">
+            <div class="type">
+                <h2>{{ type.grouper }}</h2>
+            </div>
+            <div class="cards_con">
+                {% for dataset in type.list %}
+                <div onclick=show() class="Card">
+                    <img src="{{ dataset.db_image.url }}" alt="Dataset Image">
+                    <div class="info">
+                        <h3>{{ dataset.db_name }}</h3>
+                        <p>{{ dataset.db_info }}</p>
+                        <div class="impo_details">
+                            <h4>Rating: {{ dataset.db_rating }}⭐️</h4>
+                            <span>Date: {{ dataset.db_upload_date|date:"jS F Y" }}</span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+            <p>no dataset</p>
+        {% endif %}
     </div>
 </main>
+
+<div class="detailed_info_con">
+    <div class="detailed_card">
+        <div class="img_imp_details_con">
+            <img src="https://brightdata.com/wp-content/uploads/2023/01/What-Is-a-Dataset_regular.png" alt="dataset img">
+            <div class="main_info">
+                <h2>Title<span onclick=gayab() class="back"><i class="fi fi-rr-cross"></i></span></h2>
+                <h4>Price</h4>
+                <p>Info: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem natus fugit inventore obcaecati ad aliquid ab voluptatum autem iusto vel?</p>
+                <span>Rating</span>
+                <span>Date</span>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock body %}
 {% block extra_scripts %}

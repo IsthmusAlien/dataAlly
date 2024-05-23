@@ -1,5 +1,6 @@
 @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 
 .data_polls {
@@ -8,13 +9,14 @@
     display: flex;
     align-items: center;
     align-content: center;
-    color: black;
+    color: white;
+    z-index: 0;
 }
 
 .sidebar {
     width: 20%;
     height: 100%;
-    background-color: #c5c5c6;
+    background-color: #1b1e22;
     overflow-y: scroll;
 }
 
@@ -39,6 +41,11 @@
     width: 80%;
     height: 100vh;
     background-color: white;
+    overflow-y: scroll;
+}
+
+.main_data_container::-webkit-scrollbar{
+    display: none;
 }
 
 .search_icon {
@@ -69,9 +76,10 @@
 .file_type_con {
     width: 100%;
     display: flex;
-    background-color: black;
+    background-color: lightslategrey;
     color: white;
     padding: 4%;
+    padding-top: 7%;
     border-radius: 10px;
     margin-top: 15px;
 }
@@ -84,6 +92,7 @@
     width: 100%;
     max-width: 600px;
     background: white;
+    color: black;
     padding-left: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
@@ -167,6 +176,7 @@
     margin-bottom: 5%;
     padding: 9px;
     border-radius: 10px;
+    color: black;
 }
 
 .file-size label{
@@ -180,4 +190,149 @@
 
 .file_size_all{
     display: flex;
+}
+
+.grid_datasets_con {
+    margin-bottom: 25px;
+    background-color: #474747;
+}
+
+.cards_con{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    background-color: #474747;
+    overflow-x: scroll;
+    padding: 20px 15px;
+}
+
+.cards_con::-webkit-scrollbar{
+    display: none;
+}
+
+
+.Card {
+    width: 30%;
+    min-width: 30%;
+    max-width: 30%;
+    height: auto;
+    background-color: #c5c5c6;
+    margin-right: 3%;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Card:hover{
+    transform: scale(1.02);
+}
+
+.info{
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.Card h4{
+    color: gold;
+    background-color: black;
+    padding: 3% 2.7%;
+    margin-bottom: 0;
+    width: 41%;
+    border-radius: 10px;
+}
+
+.Card img{
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.impo_details{
+    display: flex;
+}
+
+.impo_details span{
+    position: relative;
+    top: 23px;
+    left: 23px;
+    background-color: white;
+    border-radius: 10px;
+    height: 25px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+}
+
+.Card p{
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+.Card h3{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.type h2{
+    margin: 0;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.detailed_info_con{
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    top: 10%;
+    z-index: 1;
+    display: none;
+    width: 80%;
+    margin-left: auto;
+}
+
+.detailed_card{
+    width: 100%;
+    height: 569px;
+    background-color: #474747;
+    border-radius: 10px;
+}
+
+.img_imp_details_con{
+    width: 100%;
+    display: flex;
+}
+
+.img_imp_details_con img{
+    width: 30%;
+}
+
+.main_info{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: black;
+}
+
+.main_info h2{
+    margin: 0;
+    margin-top: 10px;
+}
+
+.main_info h4{
+    margin: 0;
+}
+
+.main_info p{
+    width: 80%;
+}
+
+.back{
+    margin-left: 85%;
+    cursor: pointer;
 }
