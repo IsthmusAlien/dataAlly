@@ -1,11 +1,11 @@
 {% extends "base.html" %} 
 {% load static %} 
 {% block title %}Polls{% endblock title %}
-    
+{% block css_styling %}<link rel="stylesheet" href={% static "css/polls.css" %}>{% endblock css_styling %}
 {% block body %}
 <main class="main_polls">
    <div class="selection_part">
-
+    
    </div>
    <div class="divider_polls"></div>
    <div class="interaction_part"> 

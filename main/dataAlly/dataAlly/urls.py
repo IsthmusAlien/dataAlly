@@ -13,8 +13,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Home),
     path('database/', Database),
-    path('models/', Models),
+    path('model/', Models),
     path('login/', Login),
     path('signup/', Signup),
-    path('polls/', Polls),
+    path('poll/', Polls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
