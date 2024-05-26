@@ -1,3 +1,22 @@
+
+body {
+    background-color: #1b1e22;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: var(--body-font-size, 14px);
+    line-height: 1.5;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
+
 .main_polls {
     width: 100%;
     height: 100%;
@@ -5,6 +24,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
+    overflow-y: scroll;
 }
 
 .selection_part {
@@ -18,6 +38,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 1%;
+    overflow-y: scroll;
 }
 
 .divider_polls  {
@@ -128,8 +149,6 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding-left: 5%;
-    padding-right: 3%;
 }
 
 .slider-label {

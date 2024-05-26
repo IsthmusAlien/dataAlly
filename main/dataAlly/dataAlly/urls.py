@@ -16,5 +16,5 @@ urlpatterns = [
     path('models/', Models),
     path('login/', Login),
     path('signup/', Signup),
-    path('polls/', Polls),
+    path('poll/', Polls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 

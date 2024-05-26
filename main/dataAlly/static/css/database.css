@@ -2,6 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
+body {
+    background-color: #1b1e22;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: var(--body-font-size, 14px);
+    line-height: 1.5;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
 
 .data_polls {
     width: 100%;
@@ -288,21 +305,29 @@
 .detailed_info_con{
     position: absolute;
     bottom: 0;
-    left: 20%;
+    left: 21%;
     top: 10%;
     z-index: 1;
     display: none;
     width: 80%;
+<<<<<<< HEAD
     margin-left: auto;
     transition: all 1s ease-in-out;
     overflow-y: hidden;
+=======
+    margin: auto;
+>>>>>>> c910888b008d50604b441ac0aaca1cb51082977f
 }
 
 .detailed_card{
-    width: 100%;
-    height: 569px;
+    top: 11%;
+    width: 78%;
+    position: fixed;
+    height: 85%;
     background-color: #474747;
     border-radius: 10px;
+    border: 1px solid black;
+    margin: auto;
 }
 
 .img_imp_details_con{
@@ -312,6 +337,7 @@
 
 .img_imp_details_con img{
     width: 30%;
+    border-top-left-radius: 10px;
 }
 
 .main_info{
@@ -319,6 +345,7 @@
     padding-bottom: 10px;
     background-color: white;
     color: black;
+    border-top-right-radius: 10px;
 }
 
 .main_info h2{
