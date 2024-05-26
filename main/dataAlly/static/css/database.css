@@ -294,6 +294,8 @@
     display: none;
     width: 80%;
     margin-left: auto;
+    transition: all 1s ease-in-out;
+    overflow-y: hidden;
 }
 
 .detailed_card{
